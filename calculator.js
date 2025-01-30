@@ -34,6 +34,10 @@ buttons.forEach((button) =>{
     else if(buttonValue === "delete"){
         currentInput= currentInput.slice(0,-1); //remove last charecter
     }
+        else if(buttonValue ==="doubzero"){
+        display.value="In Future we add some new features in this button";
+        return;
+    }
     else if(buttonValue === "equal"){
         try {
             currentInput = eval(currentInput);
@@ -45,7 +49,7 @@ buttons.forEach((button) =>{
         currentInput = currentInput + button.textContent;   //append clicked button text
     }
     display.value=currentInput; //update the display
-    display.innerText=currentInput;
+    display.innerText=currentInput;  //when normal html element eg div and article and span not foor input element.
 
 });
 });
