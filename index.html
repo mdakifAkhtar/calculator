@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         background: #f4f4f4;
+         font-family: Arial, sans-serif;
+        }
+        .calculator{
+            width: 250px;
+            background: rgb(184, 170, 170);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 5px 9px 12px rgb(235, 173, 173),-5px -9px 12px rgb(235, 173, 173) ;
+            text-align: center;
+        }
+        .buttons{
+            height:284px ;
+            width:251px;
+            background-color:black;
+            border-radius:3px;
+            border-radius:9px;
+        }       
+        input[type=text]{
+            height:49px ;
+            width:242px;
+            background-color:rgb(33, 16, 16) ;
+            color:white ;
+            border:2px solid black ;
+            margin-bottom:9px ;
+            border-radius:15px ;
+            font-size:29px ;
+        }
+        button{
+            height:51px;
+            width:51px;
+            background-color:rgb(98, 95, 95);
+            margin-left:5px ;
+            margin-top:5px ;
+            border-radius:25% ;
+            font-size:23px ;
+            color:white ;
+        }
+        button:active{
+            opacity:0.5 ;
+            box-shadow: 5px 9px 12px rgb(235, 173, 173),-5px -9px 12px rgb(235, 173, 173) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" maxlength="9" placeholder="" readonly>
+    <div class="buttons">
+        <button class="button" id="clear"style="background-color:orange ">AC</button>
+        <button class="button" id="delete"style="color:orange">Del</button>
+        <button class="button" id="percent" style="color:orange">%</button>
+        <button class="button" id="divide" style="color:orange ">/</button>
+        <button class="button" id="seven">7</button>
+        <button class="button" id="eight">8</button>
+        <button class="button" id="nine">9</button>
+        <button class="button" id="multiply"style="color:orange ">*</button>
+        <button class="button" id="four">4</button>
+        <button class="button" id="five">5</button>
+        <button class="button" id="six">6</button>
+        <button class="button" id="sub"style="color:orange ">-</button>
+        <button class="button" id="one">1</button>
+        <button class="button" id="two">2</button>
+        <button class="button" id="three">3</button>
+        <button class="button" id="add"style="color:orange ">+</button>
+        <button class="button" id="zero">0</button>
+        <button class="button" id="doubzero">@</button>
+        <button class="button" id="dot">.</button>
+        <button class="button" id="equal"style="background-color:orange ">=</button>
+    </div>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
